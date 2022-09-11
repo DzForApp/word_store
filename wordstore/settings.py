@@ -16,13 +16,13 @@ SECRET_KEY = 'django-insecure-p*u6sphqd^-sp%wf^-mq@vjwgh#k1h_8^i_+1@g690cw_4981(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','wordstore2022.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','wordstore2022.herokuapp.com','192.168.180.192','ALL']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-     
+ 
     'word.apps.WordConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -34,8 +34,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+  'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
